@@ -23,10 +23,10 @@ const vue = new Vue({
             emailjs.send("service_rivercr","FormGitHubPort", data)
             .then(function(response) {
                 if(response.text === 'OK'){
-                    this.name="";
-                    this.email="";
-                    this.message= '';
-                    this.cellphone="";
+                    $("#name").val("");
+                    $("#email").val("");
+                    $("#cellphone").val("");
+                    $("#message").val("");
 
                     var option = {
                         animation: true,
@@ -36,7 +36,6 @@ const vue = new Vue({
                     $("#alert").toast(option);
                     $("#alert").toast("show");
                 }
-               console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
             }, function(err) {
                 var option = {
                         animation: true,
