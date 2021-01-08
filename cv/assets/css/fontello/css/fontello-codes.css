@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+ 
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-star:before { content: '\e002'; } /* '' */
+.icon-contacts:before { content: '\e04f'; } /* '' */
+.icon-bank:before { content: '\f19c'; } /* '' */
+.icon-graduation-cap:before { content: '\f19d'; } /* '' */
+.icon-street-view:before { content: '\f21d'; } /* '' */
+.icon-user:before { content: '👤'; } /* '\1f464' */
+.icon-phone:before { content: '📞'; } /* '\1f4de' */

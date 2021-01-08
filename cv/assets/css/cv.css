@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contenedorGeneral {
+    position: relative;
+    background: #2A3132;
+    width: 750px;
+    display: flex!important;
+    margin: auto;
+}
+
+.contenido {
+    position: relative;
+    width: 67%;
+    background-color: white;
+    margin: 12px 0 12px 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.568);
+}
+
+.developer {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    color: white;
+}
+
+.developer section {
+    position: relative;
+    margin: 30px 0 30px 0;
+}
+
+.profile {
+    border-bottom: 2px solid white;
+}
+
+.developer .seccion {
+    position: relative;
+    width: 80%;
+    background: #004445;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px 10px 0 20px;
+}
+
+.contenido .seccion {
+    position: relative;
+    width: 90%;
+    background: #004445;
+    height: 30px;
+    font-size: 15px;
+    padding: 5px 10px 0 20px;
+    left: 10%;
+    display: inline-block;
+    color: white;
+}
+
+
+/*#336B87 #763626*/
+
+.contenido .seccion h3 {
+    position: absolute;
+    top: 5px;
+    padding: 0 0 0 30px!important;
+}
+
+section .item,
+section p,
+ul li {
+    padding: 0 20px 0 20px;
+    font-size: 15px;
+}
+
+.profile h3,
+.profile p {
+    display: block;
+    text-align: center;
+}
+
+.imagen {
+    display: block;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.568), -5px -5px 15px rgba(0, 0, 0, 0.568);
+    margin-bottom: 10px;
+}
+
+.developer section .imagen img {
+    position: relative;
+    width: 180px;
+    left: -6px;
+}
+
+.item {
+    position: relative;
+    margin: 5px 0 10px 0;
+}
+
+.contenido section h2,
+.contenido section p,
+.contenido section h3,
+.contenido section h4,
+.contenido section h5 {
+    padding: 0 60px 5px 100px;
+}
+
+.contenido .skills {
+    position: relative;
+    display: flex;
+    padding: 0 40px 5px 80px;
+}
+
+.contenido .izquierda {
+    flex: auto;
+}
+
+.contenido .derecha {
+    flex: auto;
+}
+
+.contenido .cursos {
+    padding: 0 40px 5px 80px;
+}
+
+.contenido .experiencia {
+    position: relative;
+    display: flex;
+}
+
+.contenido .experiencia .fecha {
+    width: 20%;
+}
+
+.contenido .experiencia .work {
+    width: 80%;
+}
+
+.icon-mail {
+    word-break: initial;
+    word-break: initial;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none
+}
+
+.developer section p {
+    position: relative;
+    
+    margin-right: 25px;
+}
