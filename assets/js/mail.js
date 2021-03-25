@@ -1,6 +1,14 @@
+var spinner = `<div class="d-flex justify-content-center" id="spinner">
+    <div class="spinner-border mr-2" role="status">
+    </div>
+        sending...
+</div>`;
 (function(){
     emailjs.init("user_7MMRGZIxFkYauEW9BbQPJ");
+
+    
  })();
+ 
 const vue = new Vue({
     el: '#app',
     data(){
@@ -13,6 +21,12 @@ const vue = new Vue({
     },
     methods: {
         enviar(){
+            $("#formulario").append(spinner);
+            var boton= $("#btn_form");
+            $("#btn_form").remove();
+            $("#formulario").find("input[type=submit]").remove();
+            
+
             let data = {
                 name: this.name,
                 email: this.email,
@@ -36,6 +50,8 @@ const vue = new Vue({
                     $("#alert").toast(option);
                     $("#alert").toast("show");
                 }
+                $("#formulario").append(boton);
+                $("#formulario").find("#spinner").remove();
             }, function(err) {
                 var option = {
                         animation: true,
@@ -45,9 +61,9 @@ const vue = new Vue({
                 $("#alert").toast(option);
                 $("#alert-body").html("an error occurred while sending the message");
                 $("#alert").toast("show");
-               
+                $("#formulario").append(boton);
+                $("#formulario").find("#spinner").remove();
             });
-        }
-        
+        }     
     }
 });

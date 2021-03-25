@@ -34,6 +34,7 @@
             </div>
         </header>
         <nav class="navbar navbar-expand-sm sticky-top shadow navbar-light" id="barra">
+           <div class="container">
             <a class="navbar-brand" href="#header" id="title_nav"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -58,6 +59,7 @@
                 </li>
               </ul>
             </div>
+           </div>
         </nav>
         <section id="profile">
             <h2>Profile</h2>
@@ -76,8 +78,8 @@
                 </div>
                 <hr>
                 <div class="formation">
-                    <p>Computer Enginner intern, i consider that have a great capacity from analysis, autodidact,
-                                        liking for the progrmamming area and i adapt to the teamwork</p>
+                    <p>Computer Enginner, I consider that have a great capacity from analysis, autodidact,
+                                        liking for the progrmamming area and I adapt to the teamwork</p>
                     <h5 class="m-0">Objetive</h5>
                     <p class="m-0"> Grow professionally in the programming area applying acquired skills during my academic training</p>
                 </div>
@@ -151,7 +153,7 @@
                     </div>
                     <div class="intermediare">
                         <div class="badge badge-danger d-inline">I</div>
-                        <small class="d-inline">Intermediare</small>
+                        <small class="d-inline">Intermediate</small>
                     </div>
                     <div class="basic">
                         <div class="badge badge-info d-inline">B</div>
@@ -206,8 +208,10 @@
                         <div class="content">
                             <h5>Frameworks</h5>
                             <ul>
-                                <li><div class="badge badge-danger d-inline">I</div> Bootstrap</li>
-                                <li><div class="badge badge-danger d-inline">I</div> Laravel</li>
+                                <li><div class="badge badge-danger d-inline">I</div> Angular js</li>
+                                <li><div class="badge badge-primary d-inline">A</div> Bootstrap</li>
+                                <li><div class="badge badge-primary d-inline">A</div> Laravel</li>
+                                <li><div class="badge badge-info d-inline">B</div> React js</li>
                                 <li><div class="badge badge-info d-inline">B</div> Vue</li>
                             </ul>
                         </div>
@@ -377,7 +381,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
-                            <form action="" method="post" v-on:submit.prevent="enviar">
+                            <form action="" method="post" v-on:submit.prevent="enviar" id="formulario">
                                 <div class="form-group">
                                     <label for="name">Name:</label>
                                     <input class="form-control" type="text" v-model="name" id="name" placeholder="Name" required >
@@ -394,7 +398,9 @@
                                     <label class="message">Message:</label>
                                     <textarea class="form-control" v-model="message" id="message" placeholder="Message" required cols="30" rows="10"></textarea>
                                 </div>
-                                <input type="submit" value="Send" class="btn btn-primary btn-block">
+                                <input type="submit" value="Send" class="btn btn-primary btn-block" id="btn_form">
+
+                                
                             </form>
                         </div>
                     </div>

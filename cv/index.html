@@ -9,12 +9,12 @@
     <link type="text/css" href="assets/css/fontello/css/fontello.css" rel="stylesheet">
     <link type="text/css" href="assets/css/cv.css" rel="stylesheet">
 
-    <!-- <script type="text/javascript" src="assets/js/html2canvas.min.js"></script>
-    <script type="text/javascript" src="assets/js/canvas2image.js"></script>
-    <script type="text/javascript" src="assets/js/crearimg.js"></script> -->
-    
-</head>
+    <!-- <script type="text/javascript" src="assets/js/html2canvas.min.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/canvas2image.js"></script>
+    <script type="text/javascript" src="assets/js/crearimg.js"></script>  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script> -->
 
+</head>
 <body>
     <div id="contenedorGeneral" class="contenedorGeneral">
         <div class="developer">
@@ -30,8 +30,8 @@
                     <label for="profiles" class="icon-user"> Perfil</label>
                     <h4 id="profiles"></h4>
                 </div>
-                <p>Computer Enginner intern, i consider that have a great capacity from analysis, autodidact,
-                    liking for the progrmamming area and i adapt to the teamwork</p>
+                <p>Computer Enginner, I consider that have a great capacity from analysis, autodidact,
+                    liking for the progrmamming area and I adapt to the teamwork</p>
             </section>
             <section>
                 <div class="seccion">
@@ -83,7 +83,7 @@
                     <label for="educacion" class="icon-graduation-cap"></label>
                     <h3 id="educacion">Academic Training</h3>
                 </div>
-                <p style="padding-bottom: 0;">Degree in Computer Enginner</p>
+                <p style="padding-bottom: 0;">Computer Enginner</p>
                 <p>University of Ixtlahuaca CUI</p>
             </section>
             <br>
@@ -128,13 +128,15 @@
                         <ul>
                             <li>HTML</li>
                             <li>Javascript</li>
+                            <li>React js</li>
+                            <li>Angular js</li>
                             <li>CSS</li>
                             <li>Bootstrap</li>
                             <li>PHP</li>
                             <li>Laravel</li>
                             <li>SQL/MySQL</li>
                             <li>Java</li>
-                            <li>English Intermediare</li>
+                            <li>English Intermediate</li>
                         </ul>
                     </div>
                     <div class="derecha">
@@ -170,12 +172,20 @@
             <br>
         </div>
     </div>
-    <a id="download" class="btn btn-info btn-sm download" href="River CV.jpeg" download style="display: none;"></a>
+    <a id="download" class="btn btn-info btn-sm download" href="RiverCV.pdf" download style="display: none;"></a>
 </body>
 
 </html>
 <script >
     window.onload=function(){
         document.getElementById("download").click();
+        // html2canvas(document.getElementById("contenedorGeneral"),{
+        //     onrendered:function(canvas){
+        //         var img=canvas.toDataURL("image/png");
+        //         var doc = new jsPDF('p','mm',[265,195]);
+        //         doc.addImage(img,'JPEG',0,0);
+        //         doc.save('cv.pdf');
+        //     }
+        // });
     }
 </script>

@@ -158,7 +158,6 @@ header .contenido{
     width: 30%;
     margin: 0 10% 0 10%;
     border: solid 3px #3D3D3D;
-    
 }
 .work-experience-item > button{
     width: 100%;
@@ -170,6 +169,7 @@ header .contenido{
     object-fit: cover;
     height: 250px;
 }
+
 .modal-header{
     background-color: #3D3D3D;
     color: #DEDCDD;
