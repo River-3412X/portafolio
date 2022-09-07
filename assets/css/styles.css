@@ -12,7 +12,7 @@ header{
     background-image: url(../img/estructura-abstracta-3d-gris-oscuro-3593.webp);
     background-size: cover;
     overflow: hidden; 
-    color: #E2CC43;
+    color: #b5bac9;
 }  
 header .imagen-header{
     text-align: center;
@@ -59,17 +59,20 @@ header .contenido{
 }
 /************navbar************/
 .navbar{
-    background-color:#E2CC43;
+    background-color:#2d2c55;
 }
 .navbar a{
-    color: #3D3D3D !important;
+    /*color: #3D3D3D !important;*/
+    color:white !important;
+    border-radius: 5px;
 }
 .navbar .active{
-    background:#DEDCDD;
+    background-color:  #3D3D3D;
 }
 /***************Profile************************/
 #profile{
-    margin: 10px 0 10px 0;
+    padding: 40px 0 40px 0;
+    background-color: #f4f4f2;
 }
 #profile h2{
     text-align: center;
@@ -140,24 +143,25 @@ header .contenido{
 }
 /*************** work Experience***************************/
 #work-experience {
-    margin-bottom: 20px;
-    padding: 15px 0 20px 0;
-    margin-top: 10px;
-    background-color:#E2CC43;
+    padding: 30px 0 50px 0;
+    background-color:#2d2c55;
 }
 #work-experience h2{
     text-align: center;
-    color: #3D3D3D;
-    margin: 10px 0 10px 0;
+    color: #b5bac9;
+    margin: 0px 0 20px 0;
 }
-#work-experience .container{
+#work-experience .contenedor-items{
     position: relative;
-    width: 100%;
+    width: 100%!important;
+    display: flex;
+    flex-wrap: wrap;
 }
 .work-experience-item{
-    width: 30%;
-    margin: 0 10% 0 10%;
-    border: solid 3px #3D3D3D;
+    width: 29%;
+    margin: 0 2% 0 2%;
+    border: solid 3px #b5bac9;
+    
 }
 .work-experience-item > button{
     width: 100%;
@@ -171,7 +175,7 @@ header .contenido{
 }
 
 .modal-header{
-    background-color: #3D3D3D;
+    background-color: #2D2C55;
     color: #DEDCDD;
 }
 .modal-header > button{
@@ -179,6 +183,9 @@ header .contenido{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+.modal-body, .modal-footer{
+    background-color: #f4f4f2;
 }
 header .download{
     position:absolute;
@@ -199,7 +206,7 @@ header .whats:hover{
 @media (max-width:768px){
     .work-experience-item{
         width: 40%;
-        margin: 0 5% 0 5%;
+        margin: 10px 5% 10px 5%;
     }   
     .work-experience-item button img{
         height: 200px;
@@ -208,7 +215,8 @@ header .whats:hover{
 @media (max-width:400px){
     .work-experience-item{
         width: 45%;
-        margin: 0 2.5% 0 2.5%;
+        margin: 5px 2.5% 5px 2.5%;
+        
     }   
     .work-experience-item button img{
         height: 120px;
@@ -218,6 +226,8 @@ header .whats:hover{
 /*************** Knowledge***************************/
 #knowledge{
     color:#1A1A1A;
+    background-color: #f4f4f2;
+    padding: 40px 0 40px 0;
 }
 .skills{
     position: relative;
@@ -259,11 +269,8 @@ header .whats:hover{
 }
 /********************Projects****************************/
 #projects{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding: 15px 0 15px 0;
-    background-color:#E2CC43;
-    color:#1A1A1A;
+    padding: 40px 0 40px 0;
+    background-color:#2d2c55;
 }
 #projects .projects{
     flex-wrap:wrap ;
@@ -271,6 +278,8 @@ header .whats:hover{
 #projects > h2{
     text-align: center;
     text-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.154)!important;
+    margin-bottom: 15px;
+    color:#b5bac9;
 }
 .projects-item{
     width: 23%;
@@ -309,6 +318,8 @@ header .whats:hover{
 /***********************contact*********************/
 #contact{
     color:#1A1A1A;
+    background-color: #f4f4f2;
+    padding: 40px 0 40px 0;
 }
 #contact .social-media{
     text-align: center;
