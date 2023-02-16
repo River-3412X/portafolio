@@ -27,10 +27,12 @@ header .nickname{
 }
 header img{
     position: relative;
-    width: 160px;
+    width: 200px;
+    
     margin: 10px;
-    height: auto!important;
+
     border-radius: 50%;
+    filter: brightness(1.1);
     box-shadow: 5px 3px 13px 3px rgba(0, 0, 0, 0.300),
                 -5px -3px 13px 3px rgba(0, 0, 0, 0.300);
 }
@@ -159,7 +161,7 @@ header .contenido{
 }
 .work-experience-item{
     width: 29%;
-    margin: 0 2% 0 2%;
+    margin: 10px 2% 10px 2%;
     border: solid 3px #b5bac9;
     
 }

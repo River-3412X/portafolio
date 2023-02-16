@@ -98,6 +98,7 @@ ul li {
     position: relative;
     width: 180px;
     left: -6px;
+    filter: brightness(1.1);
 }
 
 .item {
