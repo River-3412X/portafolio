@@ -26,12 +26,12 @@
     display: inline-block;
     width: 33%;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .developer section {
     position: relative;
-    margin: 30px 0 30px 0;
+    margin: 20px 0 20px 0;
 }
 
 .profile {
@@ -42,8 +42,8 @@
     position: relative;
     width: 80%;
     background: #2d2c55;
-    height: 30px;
-    font-size: 16px;
+    height: 25px;
+    font-size: 14px;
     padding: 5px 10px 0 20px;
 }
 
@@ -51,9 +51,9 @@
     position: relative;
     width: 90%;
     background: #2d2c55;
-    height: 30px;
+    height: 25px;
     font-size: 14px;
-    padding: 5px 10px o 20px;
+    padding: 3px;
     left: 10%;
     display: inline-block;
     color: white;
@@ -73,7 +73,7 @@ section .item,
 section p,
 ul li {
     padding: 0 20px 0 20px;
-    font-size: 14px;
+    font-size: 13px;
     list-style-type: none;
 }
 
@@ -100,10 +100,17 @@ ul li {
     left: -6px;
     filter: brightness(1.1);
 }
+.developer section .item img {
+    background-color: red;
+    position: relative;
+    width: 120px;
+    
+    filter: brightness(1.1);
+}
 
 .item {
     position: relative;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 5px 0;
 }
 
 .contenido section h2,
@@ -111,14 +118,14 @@ ul li {
 .contenido section h3,
 .contenido section h4,
 .contenido section h5 {
-    padding: 0 30px 3px 60px;
-    font-size: 14px;
+    padding: 0 0px 3px 0px;
+    font-size: 13px;
 }
 
 .contenido .skills {
     position: relative;
     display: flex;
-    padding: 0 40px 5px 80px;
+    padding: 0 0px 5px 0px;
     font-size: 14px;
 }
 
@@ -132,7 +139,7 @@ ul li {
 }
 .contenido .derecha ul li,
 .contenido .izquierda ul li{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .contenido .cursos {
@@ -150,11 +157,25 @@ ul li {
 }
 
 .contenido .experiencia .fecha {
-    width: 17%;
+    width: 0%;
 }
 
-.contenido .experiencia .work {
-    width: 83%!important;
+.work {
+    width: 90%!important;
+    margin-left: 10%;
+}
+.contenido .experiencia .work h4{
+    position: relative;
+    display: inline-block;
+
+    background-color: #2d2c55;
+    color:white;
+    border-radius: 5px;
+    padding: 3px;
+    text-shadow:5px 5px 15px rgba(0, 0, 0, 0.568);
+    margin-bottom: 3px ;
+    margin-top: 10px ;
+
 }
 
 .icon-mail {
